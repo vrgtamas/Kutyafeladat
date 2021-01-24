@@ -206,6 +206,16 @@ public class KutyaForm extends javax.swing.JFrame {
 
     private void cbHanyKutyaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbHanyKutyaActionPerformed
         // TODO add your handling code here:
+        
+        
+        int db = 0;
+        for (KutyaClass hk : kutyak) {
+            if (hk.getNem().equals(cbHanyKutya.getSelectedItem().toString())) {
+                db++;
+            }
+        }
+        
+        txtHanyKutya.setText(String.valueOf(db));
     }//GEN-LAST:event_cbHanyKutyaActionPerformed
 
     private void tblAdatokMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblAdatokMouseClicked
