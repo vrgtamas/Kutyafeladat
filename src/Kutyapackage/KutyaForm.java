@@ -212,15 +212,15 @@ public class KutyaForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         int index = tblAdatok.getSelectedRow();
         
-        String faj = tblmodel.getValueAt(index, 0).toString();
-        String neme = tblmodel.getValueAt(index, 1).toString();
-        String eletkora = tblmodel.getValueAt(index, 2).toString();
-        String neve = tblmodel.getValueAt(index, 3).toString();
+        //String faj = tblmodel.getValueAt(index, 0).toString();
+        //String neme = tblmodel.getValueAt(index, 1).toString();
+        //String eletkora = tblmodel.getValueAt(index, 2).toString();
+        //String neve = tblmodel.getValueAt(index, 3).toString();
         
-        txtFajta.setText(faj);
-        txtNem.setText(neme);
-        txtEletkor.setText(eletkora);
-        txtNev.setText(neve);
+        txtFajta.setText(kutyak.get(index).getFajta());
+        txtNem.setText(kutyak.get(index).getNem());
+        txtEletkor.setText(String.valueOf(kutyak.get(index).getEletkor()));
+        txtNev.setText(kutyak.get(index).getNev());
         
         
     }//GEN-LAST:event_tblAdatokMouseClicked

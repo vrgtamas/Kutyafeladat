@@ -19,8 +19,8 @@ public class KutyaClass {
     public KutyaClass(String sor) {
         String[] d = sor.split(";");
         this.fajta = d[0];
-        //this.nem = d[1];
-        //this.eletkor = Integer.parseInt(d[2]);
+        this.nem = d[1];
+        this.eletkor = Integer.parseInt(d[2]);
         this.nev = d[3];
     }
 
